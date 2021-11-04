@@ -13,3 +13,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.containerPortafolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.title{
+  font-size: 1.5em;
+  padding-bottom: 0%;
+  color: #2c3e50;
+  font-family: var(--font-primary);
+}
+
+.start{
+  font-size: 4em;
+  padding-top:0%;
+  color: #2c3e50;
+  margin-top: -1.5rem;
+}
+
+img{
+  width: 20em;
+  height: 15em;
+  padding: 7px;
+  margin: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
