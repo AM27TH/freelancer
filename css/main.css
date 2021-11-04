@@ -5,7 +5,8 @@
   --font-secondary: 'Lato', sans-serif;
   --color-primary: #2c3e50;
   --color-secondary: #18bc9c;
-  --color-third: #212529,
+  --color-third: #212529;
+  --color-white: #fff;
 }
 
 * {
@@ -24,7 +25,9 @@ nav {
 
 ul {
   display: flex;
+  height: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 
 li {
@@ -34,14 +37,69 @@ li {
 }
 
 .optionNav{
-  margin-top: 2%;
   width: 20%;
   display: flex;
+  gap: 1rem;
   justify-content: space-around;
 }
 
 .logo {
-  margin-top: 1.6%;
   font-size: 1.7em;
 }
 /****************************  FIN DE NAV ************************/
+
+main {
+  width: 100%;
+}
+
+/****************************  Inicio de Hero ************************/
+.hero {
+  background-color: var(--color-secondary);
+  display: flex;
+  padding: 2rem;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.subtitle-2 {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.start{
+  display: inline-block;
+  position: relative;
+}
+
+.fas{
+  color: var(--color-white);
+}
+
+.start::before, .start::after {
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  top: 0.6em;
+}
+
+.start::before{
+  left: -140px;
+}
+
+.start::after{
+  right: -140px;
+}
+/****************************  FIN DE HERO ************************/
