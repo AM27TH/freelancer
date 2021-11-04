@@ -1,3 +1,15 @@
-/*
- * Estilos de tu proyecto
- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@800;900&display=swap');
+
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Lato', sans-serif;
+  --color-primary: #2c3e50;
+  --color-secondary: #18bc9c;
+  --color-third: #212529,
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
