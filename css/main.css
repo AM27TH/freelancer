@@ -5,11 +5,70 @@
   --font-secondary: 'Lato', sans-serif;
   --color-primary: #2c3e50;
   --color-secondary: #18bc9c;
-  --color-third: #212529,
+  --color-third: #212529;
+  --color-white: #fff;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+main {
+  width: 100%;
+}
+
+.hero {
+  background-color: var(--color-secondary);
+  display: flex;
+  padding: 2rem;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.subtitle-2 {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.start{
+  display: inline-block;
+  position: relative;
+}
+
+.fas{
+  color: var(--color-white);
+}
+
+.start::before, .start::after {
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  top: 0.6em;
+}
+
+.start::before{
+  left: -140px;
+}
+
+.start::after{
+  right: -140px;
 }
