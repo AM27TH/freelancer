@@ -5,7 +5,8 @@
   --font-secondary: 'Lato', sans-serif;
   --color-primary: #2c3e50;
   --color-secondary: #18bc9c;
-  --color-third: #212529,
+  --color-third: #212529;
+  --color-white: #fff;
 }
 
 * {
@@ -14,10 +15,7 @@
   box-sizing: border-box;
 }
 
-
-
-
-
+/*************form*********************/
 .form-freelance {
   width: 100%;
   max-width: 600px;
@@ -55,7 +53,7 @@
   margin: 0.6rem 0;
   border: none;
   outline: none;
-  font-weight: 600;
+  font-weight: 600  ;
   transition: 0.5s;
   border-bottom: 0.2px solid rgb(167, 167, 167);
   font-family: var(--font-secondary);
@@ -86,3 +84,177 @@
   cursor: pointer;
 }
 
+/**************************** NAV ********************************/
+
+nav {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 80px;
+}
+
+ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-family: var(--font-primary);
+  color: white;
+}
+
+.optionNav{
+  width: 20%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 1.7em;
+}
+/****************************  FIN DE NAV ************************/
+
+main {
+  width: 100%;
+}
+
+/****************************  Inicio de Hero ************************/
+.hero {
+  background-color: var(--color-secondary);
+  display: flex;
+  padding: 2rem;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.subtitle-2 {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.start{
+  display: inline-block;
+  position: relative;
+}
+
+.fas{
+  color: var(--color-white);
+}
+
+.start::before, .start::after {
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  top: 0.6em;
+}
+
+.start::before{
+  left: -140px;
+}
+
+.start::after{
+  right: -140px;
+}
+/****************************  FIN DE HERO ************************/
+/****************************  FIN DE HERO ************************/
+.containerPortafolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.subtitle-1{
+  font-size: 1.5em;
+  padding-bottom: 0%;
+  color: #2c3e50;
+  font-family: var(--font-primary);
+}
+
+.startPortafolio{
+  font-size: 4em;
+  padding-top:0%;
+  color: #2c3e50;
+  margin-top: -1.5rem;
+}
+
+.imgPortafolio{
+  width: 20em;
+  height: 15em;
+  padding: 7px;
+  margin: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* start section about */
+.section-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-secondary);
+  color: white;
+  padding: 50px 340px;
+}
+
+.text-about {
+  display: flex;
+}
+
+.section-about h1 {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  margin-block: 5px;
+}
+
+.section-about span {
+  font-family: var(--font-primary);
+  font-size: 35px;
+  margin-block: 5px;
+}
+
+.section-about p {
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: 18px;
+  margin-block: 30px;
+}
+
+.text1 {
+  margin-inline-end: 40px;
+}
+
+.btn-download {
+  background: none;
+  color: var(--color-white);
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-block: 30px;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* end section about */
