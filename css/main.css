@@ -15,6 +15,7 @@
   box-sizing: border-box;
 }
 
+
 /**************************** NAV ********************************/
 
 nav {
@@ -103,7 +104,42 @@ main {
   right: -140px;
 }
 /****************************  FIN DE HERO ************************/
+/****************************  FIN DE HERO ************************/
+.containerPortafolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
 
+.subtitle-1{
+  font-size: 1.5em;
+  padding-bottom: 0%;
+  color: #2c3e50;
+  font-family: var(--font-primary);
+}
+
+.startPortafolio{
+  font-size: 4em;
+  padding-top:0%;
+  color: #2c3e50;
+  margin-top: -1.5rem;
+}
+
+.imgPortafolio{
+  width: 20em;
+  height: 15em;
+  padding: 7px;
+  margin: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 /* start section about */
 .section-about {
   display: flex;
