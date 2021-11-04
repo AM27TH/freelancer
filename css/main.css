@@ -13,3 +13,76 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+
+
+.form-freelance {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.tittle-form {
+  font-family: var(--font-primary);
+  font-weight: 900;
+}
+
+.input-form input{
+  width: 450px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.2px solid rgb(167, 167, 167);
+  outline: none;
+  line-height: 4;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--color-third);
+}
+
+.posts {
+  width: 450px;
+  margin: 0.6rem 0;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  transition: 0.5s;
+  border-bottom: 0.2px solid rgb(167, 167, 167);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--color-third);
+}
+
+.posts:hover {
+  background-color: #f1f1f1;
+}
+
+.posts.textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.submit {
+  width: 50px;
+  height: 30px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
