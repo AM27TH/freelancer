@@ -13,3 +13,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* start section about */
+.section-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-secondary);
+  color: white;
+  padding: 50px 340px;
+}
+
+.text-about {
+  display: flex;
+}
+
+.section-about h1 {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  margin-block: 5px;
+}
+
+.section-about span {
+  font-family: var(--font-primary);
+  font-size: 35px;
+  margin-block: 5px;
+}
+
+.section-about p {
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: 18px;
+  margin-block: 30px;
+}
+
+.text1 {
+  margin-inline-end: 40px;
+}
+
+.btn-download {
+  background: none;
+  color: var(--color-third);
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-block: 30px;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* end section about */
